@@ -5220,4 +5220,3 @@ module_exit(cyttsp5_device_access_exit);
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("Parade TrueTouch(R) Standard Product Device Access Driver");
 MODULE_AUTHOR("Parade Technologies <ttdrivers@paradetech.com>");
-
