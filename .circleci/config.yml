@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 version: 2.1
 jobs:
   compile:
@@ -14,25 +13,10 @@ jobs:
            git clone https://github.com/akhilnarang/scripts && cd scripts && bash setup/android_build_env.sh && cd ..
            mkdir kernul
            cd kernul
-           wget 
+           wget https://raw.githubusercontent.com/Forenche/kernel_realme_sdm710/circleci-project-setup/.circleci/build.sh
            source build.sh
 workflows:
   version: 2.1
   cooking:
     jobs:
       - compile
-=======
-# Use the latest 2.1 version of CircleCI pipeline process engine. See: https://circleci.com/docs/2.0/configuration-reference
-version: 2.1
-# Use a package of configuration called an orb.
-orbs:
-  # Declare a dependency on the welcome-orb
-  welcome: circleci/welcome-orb@0.4.1
-# Orchestrate or schedule a set of jobs
-workflows:
-  # Name the workflow "welcome"
-  welcome:
-    # Run the welcome/run job in its own container
-    jobs:
-      - welcome/run
->>>>>>> 9fa855c70188fd3f07c52c4c07e5395362456878
